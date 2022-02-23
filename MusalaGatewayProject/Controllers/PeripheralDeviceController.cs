@@ -7,6 +7,7 @@ using MusalaGatewayProject.Models;
 using MusalaGatewayProject.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MusalaGatewayProject.Controllers
@@ -69,9 +70,17 @@ namespace MusalaGatewayProject.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> CreatePeripheralDevice([FromBody] PeripheralDeviceDTO peripheralDeviceDTO)
         {
+            var serialNumberGateway = peripheralDeviceDTO.GatewayId;
+            var PeripheralDevicesByGateway = await _unitOfWork.PeripheralDevices.GetAll(x=>x.GatewayId==serialNumberGateway);
+            if (PeripheralDevicesByGateway.Count() >= 10)
+            {
+                _logger.LogInformation($"Attempt to insert more than 10 Peripheral Devices per gateway" );
+                return BadRequest("Only 10 Peripheral Devices per gateway allowed");
+            }
+
             if (!ModelState.IsValid)
             {
-                _logger.LogError($"the attempt to create a new resource has failed in  {nameof(CreatePeripheralDevice)}");
+                _logger.LogError($"The attempt to create a new resource has failed in  {nameof(CreatePeripheralDevice)}");
                 return BadRequest(ModelState);
             }
             try
@@ -94,6 +103,14 @@ namespace MusalaGatewayProject.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> UpdatePeripheralDevice(int id, [FromBody] PeripheralDeviceDTO peripheralDeviceDTO)
         {
+            var serialNumberGateway = peripheralDeviceDTO.GatewayId;
+            var PeripheralDevicesByGateway = await _unitOfWork.PeripheralDevices.GetAll(x => x.GatewayId == serialNumberGateway);
+            if (PeripheralDevicesByGateway.Count() >= 10)
+            {
+                _logger.LogInformation($"Attempt to add more than 10 Peripheral Devices per gateway");
+                return BadRequest("Only 10 Peripheral Devices per gateway allowed");
+            }
+
             if (!ModelState.IsValid || id < 1)
             {
                 _logger.LogError($"Invalid Update attempt in {nameof(UpdatePeripheralDevice)}");
@@ -109,13 +126,13 @@ namespace MusalaGatewayProject.Controllers
                 }
                 _mapper.Map(peripheralDeviceDTO, peripheralDevice);
                 _unitOfWork.PeripheralDevices.Update(peripheralDevice);
-                _unitOfWork.Save();
+                await _unitOfWork.Save();
                 return NoContent();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong in {nameof(UpdatePeripheralDevice)}");
-                return StatusCode(500, "Something went wrong. Try again later.");
+                _logger.LogError(ex, $"Something went wrong in {nameof(UpdatePeripheralDevice)}");
+                return StatusCode(500, ex.Message);
             }
         }
 

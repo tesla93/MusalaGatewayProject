@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MusalaGatewayProject.Configuration;
 using MusalaGatewayProject.Context;
+using MusalaGatewayProject.Helpers;
 using MusalaGatewayProject.Repository;
 using System;
 using System.Collections.Generic;
@@ -62,6 +63,7 @@ namespace MusalaGatewayProject
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MusalaGatewayProject v1"));
             }
 
+            app.ConfigureExceptionHandler();
             app.UseHttpsRedirection();
             app.UseCors("PolicyCorsAllowAll");
 
