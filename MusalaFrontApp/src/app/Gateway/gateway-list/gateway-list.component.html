@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let gateway of gateways">
+     <app-gateway-item [gatewayItem]="gateway"></app-gateway-item>
+  </div>
+  <div
+    class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound"
+    *ngIf="gateways.length <= 0"
+  >
+    <p>There are no gateways </p>
+  </div>
+</div>
+<button (click)="onAddGateway()" class="btn btn-primary btn-lg mt-3 m-2">
+  Add Gateway
+</button>
+<button
+[ngClass]="'no-hidden'"
+*ngIf="showGoUpButton"
+class="btn btn-dark"
+(click)="onScrollTop()">
+  Go UP
+</button>
+
+
+<div
+class="modal"
+tabindex="-1"
+role="dialog"
+[ngStyle]="{'display':displayStyle}">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">New Gateway</h4>
+    </div>
+    <div class="modal-body">
+      <form  (ngSubmit)="onSaveGateway()" #f="ngForm">
+          <div class="form-group">
+            <label for="pd-vendor" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="pd-vendor" ngModel name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="gw-ipAddress" class="col-form-label">IPv4 address:</label>
+            <input type="text" minlength="7" maxlength="15" size="15"
+            pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$"
+            class="form-control" id="pd-datecreated" value="192.168.1.0" ngModel name="ipAddress" required>
+          </div>
+          <button type="submit" class="btn btn-success m-2">
+            Save
+          </button>
+          <button type="button" class="btn btn-danger m-2"
+                  (click)="closePopup()">
+            Close
+          </button>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+
+    </div>
+  </div>
+</div>
+</div>

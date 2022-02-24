@@ -1,0 +1,21 @@
+<div class="card mr-3">
+  <div class="image">
+      <img
+        [src]="pdImage"
+        [alt]="peripheralDevice.vendor"
+        class="card-img-top"
+      />
+  </div>
+  <div class="card-inner">
+    <div class="text-center">
+        <h4>Vendor: {{ peripheralDevice.vendor.toUpperCase() | slice: 0:15}}</h4>
+      <h6 class="text-muted"> Date Created: {{dateDisplayed}}</h6>
+      <small class="text-muted">
+        Status:
+        <span *ngIf="peripheralDevice.status"> Active</span>
+        <span *ngIf="!peripheralDevice.status"> Inactive</span>
+      </small>
+    </div>
+  </div>
+  <button class="btn btn-danger" (click)="deleteDevice()">Delete</button>
+</div>

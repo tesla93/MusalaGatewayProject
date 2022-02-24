@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="image">
+    <a [routerLink]="['/gateways', uriEncoded]">
+      <img
+        [src]="gatewayImage"
+        [alt]="gatewayItem.name"
+        class="card-img-top"
+      />
+    </a>
+  </div>
+  <div class="card-inner">
+    <div class="header">
+      <a [routerLink]="['/gateways', uriEncoded]">
+        <h2>{{ gatewayItem.name | slice: 0:15}}</h2>
+      </a>
+      <h4 class="text-muted">{{ gatewayItem.ipAddress }}</h4>
+      <small class="text-muted">Serial number: {{ gatewayItem.serialNumber }}</small>
+    </div>
+  </div>
+</div>

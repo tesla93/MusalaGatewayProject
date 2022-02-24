@@ -1,0 +1,14 @@
+<div class="row justify-content-center mt-3" *ngIf="gateway$ | async as gateway">
+  <div class="col-xs-12 col-sm-6 col-md-6 justify-content-center">
+    <app-gateway-item [gatewayItem]="gateway" ></app-gateway-item>
+  </div>
+  <app-peripheral-device [gateway]="gateway"></app-peripheral-device>
+  <div style="width:300px; margin-left: 0px;" >
+
+  </div>
+</div>
+
+<button (click)="onGoBack()" class="btn btn-secondary btn-lg mt-3">
+  Back
+</button>
+

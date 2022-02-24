@@ -1,0 +1,72 @@
+<div class="row">
+  <div *ngIf="gateway.peripheralDevices.length>0">
+    <h4>  Associated peripheral devices to {{gateway.name}}</h4>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4" *ngFor="let peripheralDevice of gateway.peripheralDevices">
+      <app-peripheral-device-item [peripheralDevice]="peripheralDevice"></app-peripheral-device-item>
+  </div>
+
+<div
+ class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound"
+ *ngIf="gateway.peripheralDevices.length === 0"
+>
+ <h5>This Gateway don't have peripheral devices </h5>
+</div>
+<div class="row">
+  <div class="col-xs-8 col-sm-8 col-md-8 mt-5">
+    <button (click)="onAddNewDevice()" class="btn btn-primary btn-lg">
+      Add Peripheral Device
+    </button>
+  </div>
+</div>
+
+
+
+<div
+class="modal"
+tabindex="-1"
+role="dialog"
+[ngStyle]="{'display':displayStyle}">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">New peripheral device</h4>
+    </div>
+    <div class="modal-body">
+      <form  (ngSubmit)="onSave()" #f="ngForm">
+          <div class="form-group">
+            <label for="pd-vendor" class="col-form-label">Vendor:</label>
+            <input type="text" class="form-control" id="pd-vendor" ngModel name="vendor" required>
+          </div>
+          <div class="form-group">
+            <label for="pd-datecreated" class="col-form-label">Date Created:</label>
+            <input type="date" class="form-control" id="pd-datecreated" placeholder={{dateNow}} ngModel name="dateCreated" required>
+          </div>
+          <div class="form-group">
+            <label for="pd-status" class="col-form-label">Status:</label>
+            <input class="form-check-input m-3" type="checkbox" id="pd-status" ngModel name="status">
+          </div>
+          <button type="submit" class="btn btn-success m-2">
+            Save
+          </button>
+          <button type="button" class="btn btn-danger m-2"
+                  (click)="closePopup()">
+            Close
+          </button>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div [ngStyle]="{'background-color': cover}"> </div>
+
+</div>
+
+
