@@ -13,6 +13,6 @@ namespace MusalaGatewayProject.Data
         public string Name { get; set; }
         public string IpAddress { get; set; }
 
-        public IEnumerable<PeripheralDevice> PeripheralDevices { get; set; }
+        public virtual IEnumerable<PeripheralDevice> PeripheralDevices { get; set; }
     }
 }

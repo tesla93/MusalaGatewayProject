@@ -30,7 +30,9 @@ namespace MusalaGatewayProject.Repository
             }
             if (includes != null)
             {
-                includes.Select(includeProperty => query = query.Include(includeProperty));
+                includes.ForEach(include =>
+                   query = query.Include(include)
+               );
             }
             if (orderBy != null)
             {
@@ -44,17 +46,17 @@ namespace MusalaGatewayProject.Repository
             IQueryable<T> query = _dbc;
             if (includes != null)
             {
-                includes.Select(includeProperty => query = query.Include(includeProperty));
+                includes.ForEach(include =>
+                   query = query.Include(include));
             }
             return await query.AsNoTracking().FirstOrDefaultAsync(expression);
         }
 
         public async Task<IPagedList<T>> GetPagedList(RequestParams resquestParams, List<string> includes = null)
         {
-            IQueryable<T> query = _dbc;
+            IQueryable<T> query = _dbc; 
             if (includes != null)
-            {
-                includes.Select(x => query = query.Include(x));
+            {                
                 includes.ForEach(include =>
                     query = query.Include(include)
                 );

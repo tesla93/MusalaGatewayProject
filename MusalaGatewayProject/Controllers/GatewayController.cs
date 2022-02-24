@@ -35,7 +35,7 @@ namespace MusalaGatewayProject.Controllers
         {
             try
             {
-                var gateways = await _unitOfWork.Gateways.GetPagedList(requestParams);
+                var gateways = await _unitOfWork.Gateways.GetAll();
                 var results = _mapper.Map<List<GatewayDTO>>(gateways);
                 return Ok(results);
             }
