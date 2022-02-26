@@ -1,0 +1,8 @@
+ 2022-02-26 15:47:12 [] Application MusalaGateway is started
+ 2022-02-26 15:47:23 [] Application started. Press Ctrl+C to shut down.
+ 2022-02-26 15:47:23 [] Hosting environment: Development
+ 2022-02-26 15:47:23 [] Content root path: D:\German\musala\code\MusalaGatewayProject\MusalaGatewayProject
+ 2022-02-26 15:47:23 [] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+ 2022-02-26 15:47:23 [] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 309.4078ms
+ 2022-02-26 15:47:24 [] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+ 2022-02-26 15:47:24 [] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 196.7577ms

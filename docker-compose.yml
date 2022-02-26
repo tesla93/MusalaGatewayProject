@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  musalagatewayproject:
+    image: ${DOCKER_REGISTRY-}mgp
+    build:
+      context: .
+      dockerfile: MusalaGatewayProject\Dockerfile

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EbPGUnz/Xe/nbYgx1Ejiy/PeoppURIUhzimwtu+qQQZbwzy6ZZiDENQr6ApULVXDbHsOeqYuSGI4fe+jDRiZCg==",
+  "dgSpecHash": "WTvzq7E3JYGNv1088F0/AxJRspEHszbvhVAEWfgLKiPNTUVJeNX8ZGSWFz71aF1YZInZEB9kMGBu5t39xmnXWw==",
   "success": true,
   "projectFilePath": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\leoct\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\leoct\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\leoct\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\leoct\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\leoct\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\leoct\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\leoct\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
