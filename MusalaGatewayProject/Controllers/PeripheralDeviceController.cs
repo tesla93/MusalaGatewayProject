@@ -64,17 +64,17 @@ namespace MusalaGatewayProject.Controllers
             }
         }
 
-        [HttpPost(Name =nameof(CreatePeripheralDevice))]
+        [HttpPost(Name = nameof(CreatePeripheralDevice))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> CreatePeripheralDevice([FromBody] PeripheralDeviceDTO peripheralDeviceDTO)
         {
             var serialNumberGateway = peripheralDeviceDTO.GatewayId;
-            var PeripheralDevicesByGateway = await _unitOfWork.PeripheralDevices.GetAll(x=>x.GatewayId==serialNumberGateway);
+            var PeripheralDevicesByGateway = await _unitOfWork.PeripheralDevices.GetAll(x => x.GatewayId == serialNumberGateway);
             if (PeripheralDevicesByGateway.Count() >= 10)
             {
-                _logger.LogInformation($"Attempt to insert more than 10 Peripheral Devices per gateway" );
+                _logger.LogInformation($"Attempt to insert more than 10 Peripheral Devices per gateway");
                 return BadRequest("Only 10 Peripheral Devices per gateway allowed");
             }
 
@@ -97,7 +97,7 @@ namespace MusalaGatewayProject.Controllers
             }
         }
 
-        [HttpPut("{id:int}", Name =nameof(UpdatePeripheralDevice))]
+        [HttpPut("{id:int}", Name = nameof(UpdatePeripheralDevice))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -136,7 +136,7 @@ namespace MusalaGatewayProject.Controllers
             }
         }
 
-        [HttpDelete("{id:int}", Name =nameof(DeletePeripheralDevice))]
+        [HttpDelete("{id:int}", Name = nameof(DeletePeripheralDevice))]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

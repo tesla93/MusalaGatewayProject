@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MusalaFrontApp", "MusalaFro
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F03A5AA2-D301-4F84-B80F-EA962E0A80A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusalaUnitTest", "MusalaUnitTest\MusalaUnitTest.csproj", "{F50999C4-4C02-49D1-B75B-6A538D1F665B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{F03A5AA2-D301-4F84-B80F-EA962E0A80A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F03A5AA2-D301-4F84-B80F-EA962E0A80A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F03A5AA2-D301-4F84-B80F-EA962E0A80A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F50999C4-4C02-49D1-B75B-6A538D1F665B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50999C4-4C02-49D1-B75B-6A538D1F665B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50999C4-4C02-49D1-B75B-6A538D1F665B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50999C4-4C02-49D1-B75B-6A538D1F665B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

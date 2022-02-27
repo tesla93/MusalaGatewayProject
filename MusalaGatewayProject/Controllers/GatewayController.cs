@@ -31,11 +31,13 @@ namespace MusalaGatewayProject.Controllers
         [HttpGet(Name = nameof(GetGateways))]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetGateways([FromQuery] RequestParams requestParams)
+        public async Task<IActionResult> GetGateways()
         {
             try
             {
                 var gateways = await _unitOfWork.Gateways.GetAll();
+                if (!gateways.Any())
+                    return NotFound();
                 var results = _mapper.Map<List<GatewayDTO>>(gateways);
                 return Ok(results);
             }
@@ -83,10 +85,10 @@ namespace MusalaGatewayProject.Controllers
             }
             try
             {
-            var gateway = _mapper.Map<Gateway>(gatewayDTO);
-            await _unitOfWork.Gateways.Insert(gateway);
-            await _unitOfWork.Save();
-            return CreatedAtRoute(nameof(GetGateway), new { serialNumber = gateway.SerialNumber }, gateway);
+                var gateway = _mapper.Map<Gateway>(gatewayDTO);
+                await _unitOfWork.Gateways.Insert(gateway);
+                await _unitOfWork.Save();
+                return CreatedAtRoute(nameof(GetGateway), new { serialNumber = gateway.SerialNumber }, gateway);
             }
             catch (Exception ex)
             {
@@ -130,7 +132,7 @@ namespace MusalaGatewayProject.Controllers
                 _logger.LogError(ex, $"Something went wrong in {nameof(GetGateways)}");
                 return StatusCode(500, ex.Message);
             }
-            
+
 
         }
 
@@ -157,7 +159,7 @@ namespace MusalaGatewayProject.Controllers
                 _logger.LogError(ex, $"Something went wrong in {nameof(GetGateways)}");
                 return StatusCode(500, ex.Message);
             }
-            
+
 
         }
 
