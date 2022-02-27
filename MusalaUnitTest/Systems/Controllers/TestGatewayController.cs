@@ -28,7 +28,7 @@ namespace MusalaUnitTest
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(myProfile));
             var mapper = new Mapper(configuration);
             var mockRepository = new Mock<IGenericRepository<Gateway>>();
-            mockRepository.Setup(service => service.GetAll(null, null, null)).ReturnsAsync(GatewayFixture.GetGateways());
+            mockRepository.Setup(service => service.GetAll(null, null, null)).ReturnsAsync(ModelsFixture.GetGateways());
             var uow = new Mock<IUnitOfWork>();
             uow.Setup(u => u.Gateways).Returns(mockRepository.Object);
             var contrInst = new GatewayController(uow.Object, logger, mapper);
@@ -50,7 +50,7 @@ namespace MusalaUnitTest
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(myProfile));
             var mapper = new Mapper(configuration);
             var mockRepository = new Mock<IGenericRepository<Gateway>>();
-            mockRepository.Setup(service => service.GetAll(null, null, null)).ReturnsAsync(GatewayFixture.GetGateways());
+            mockRepository.Setup(service => service.GetAll(null, null, null)).ReturnsAsync(ModelsFixture.GetGateways());
             var uow = new Mock<IUnitOfWork>();
             uow.Setup(u => u.Gateways).Returns(mockRepository.Object);
             var contrInst = new GatewayController(uow.Object, logger, mapper);
@@ -71,7 +71,7 @@ namespace MusalaUnitTest
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(myProfile));
             var mapper = new Mapper(configuration);
             var mockRepository = new Mock<IGenericRepository<Gateway>>();
-            mockRepository.Setup(service => service.GetAll(null, null, null)).ReturnsAsync(GatewayFixture.GetGateways());
+            mockRepository.Setup(service => service.GetAll(null, null, null)).ReturnsAsync(ModelsFixture.GetGateways());
             var uow = new Mock<IUnitOfWork>();
             uow.Setup(u => u.Gateways).Returns(mockRepository.Object);
             var contrInst = new GatewayController(uow.Object, logger, mapper);
@@ -85,7 +85,7 @@ namespace MusalaUnitTest
         }
 
         [Fact]
-        public async Task GeGetGateways_OnNoUsersFound_Returns404()
+        public async Task GeGetGateways_OnNogatewayFound_Returns404()
         {
             // Arrange
             var logger = Mock.Of<ILogger<GatewayController>>();

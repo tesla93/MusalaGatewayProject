@@ -35,6 +35,8 @@ namespace MusalaGatewayProject.Controllers
             try
             {
                 var peripheralDevices = await _unitOfWork.PeripheralDevices.GetAll();
+                if (!peripheralDevices.Any())
+                    return NotFound();
                 var results = _mapper.Map<List<PeripheralDeviceDTO>>(peripheralDevices);
                 return Ok(results);
             }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MusalaUnitTest.Fixture
 {
-    public static class GatewayFixture
+    public static class ModelsFixture
     {
         public static List<Gateway> GetGateways() =>
             new()
@@ -59,5 +59,27 @@ namespace MusalaUnitTest.Fixture
                     }
                 }
             };
+
+        public static List<PeripheralDevice> GetPeripheralDevices() =>
+            new()
+            {
+                new PeripheralDevice()
+                {
+                    Id = 1,
+                    Vendor = "Nokia",
+                    DateCreated = DateTime.Now,
+                    Status = true,
+                    GatewayId = new Guid("D8835792-079D-4BF6-A92A-4C68D7FFCC3D")
+                },
+                new PeripheralDevice()
+                {
+                    Id = 2,
+                    Vendor = "Huawei",
+                    DateCreated = DateTime.Now,
+                    Status = false,
+                    GatewayId = new Guid("D8835792-079D-4BF6-A92A-4C68D7FFCC3D")
+                }
+            };
+        
     }
 }
