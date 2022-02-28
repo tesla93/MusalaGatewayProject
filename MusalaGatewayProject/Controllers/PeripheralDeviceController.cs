@@ -56,6 +56,8 @@ namespace MusalaGatewayProject.Controllers
             try
             {
                 var peripheralDevice = await _unitOfWork.PeripheralDevices.Get(x => x.Id == id, new List<string> { nameof(PeripheralDevice.GatewayNavigation) });
+                if (peripheralDevice == null)
+                    return NotFound();
                 var result = _mapper.Map<PeripheralDeviceDTO>(peripheralDevice);
                 return Ok(result);
             }
@@ -73,8 +75,8 @@ namespace MusalaGatewayProject.Controllers
         public async Task<IActionResult> CreatePeripheralDevice([FromBody] PeripheralDeviceDTO peripheralDeviceDTO)
         {
             var serialNumberGateway = peripheralDeviceDTO.GatewayId;
-            var PeripheralDevicesByGateway = await _unitOfWork.PeripheralDevices.GetAll(x => x.GatewayId == serialNumberGateway);
-            if (PeripheralDevicesByGateway.Count() >= 10)
+            var peripheralDevicesByGateway = await _unitOfWork.PeripheralDevices.GetAll(x => x.GatewayId == serialNumberGateway);
+            if (peripheralDevicesByGateway.Count >= 10)
             {
                 _logger.LogInformation($"Attempt to insert more than 10 Peripheral Devices per gateway");
                 return BadRequest("Only 10 Peripheral Devices per gateway allowed");
@@ -140,7 +142,7 @@ namespace MusalaGatewayProject.Controllers
 
         [HttpDelete("{id:int}", Name = nameof(DeletePeripheralDevice))]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> DeletePeripheralDevice(int id)
         {
@@ -155,7 +157,7 @@ namespace MusalaGatewayProject.Controllers
                 if (peripheralDevice == null)
                 {
                     _logger.LogError($"Invalid Delete attempt in {nameof(DeletePeripheralDevice)}");
-                    return BadRequest("Submitted data is invalid");
+                    return NotFound("Submitted data is invalid");
                 }
                 await _unitOfWork.PeripheralDevices.Delete(peripheralDevice);
                 await _unitOfWork.Save();

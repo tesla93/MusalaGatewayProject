@@ -14,6 +14,7 @@ export class PeripheralDeviceComponent implements OnInit {
 @Input() gateway: Gateway;
 @ViewChild('f') theForm: NgForm
 displayStyle = "none";
+disableAddButton=false;
 cover="none"
 dateNow:Date
 pdToSave: PeripheralDevice
@@ -21,8 +22,8 @@ pdToSave: PeripheralDevice
 
 constructor(private pdService: PeripheralDeviceService, private datePipe: DatePipe){}
 
-
   ngOnInit(): void {
+    this.disableAddButton=this.gateway.peripheralDevices.length >=9;
 
   }
 

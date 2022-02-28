@@ -51,11 +51,15 @@ namespace MusalaGatewayProject.Controllers
         [HttpGet("{serialNumber:Guid}", Name = nameof(GetGateway))]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetGateway(Guid serialNumber)
         {
             try
             {
-                var gateways = await _unitOfWork.Gateways.Get(x => x.SerialNumber == serialNumber, new List<string> { nameof(Gateway.PeripheralDevices) });
+                var gateways = await _unitOfWork.Gateways
+                    .Get(x => x.SerialNumber == serialNumber, new List<string> { nameof(Gateway.PeripheralDevices) });
+                if (gateways == null)
+                    return NotFound();
                 var result = _mapper.Map<GatewayDTO>(gateways);
                 return Ok(result);
             }
@@ -138,7 +142,7 @@ namespace MusalaGatewayProject.Controllers
 
         [HttpDelete("{serialNumber:Guid}", Name = nameof(DeleteGateway))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> DeleteGateway(Guid serialNumber)
         {
@@ -148,7 +152,7 @@ namespace MusalaGatewayProject.Controllers
                 if (gateway == null)
                 {
                     _logger.LogError($"Invalid Delete attempt in {nameof(DeleteGateway)}");
-                    return BadRequest("Submitted data is invalid");
+                    return NotFound("Submitted data is invalid");
                 }
                 await _unitOfWork.Gateways.Delete(gateway);
                 await _unitOfWork.Save();

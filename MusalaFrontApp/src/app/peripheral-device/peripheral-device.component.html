@@ -12,9 +12,9 @@
 >
  <h5>This Gateway don't have peripheral devices </h5>
 </div>
-<div class="row">
+<div class="row" >
   <div class="col-xs-8 col-sm-8 col-md-8 mt-5">
-    <button (click)="onAddNewDevice()" class="btn btn-primary btn-lg">
+    <button [disabled]="disableAddButton" (click)="onAddNewDevice()" class="btn btn-primary btn-lg">
       Add Peripheral Device
     </button>
   </div>
