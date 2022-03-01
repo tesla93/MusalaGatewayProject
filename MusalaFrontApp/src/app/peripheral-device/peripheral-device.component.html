@@ -14,7 +14,7 @@
 </div>
 <div class="row" >
   <div class="col-xs-8 col-sm-8 col-md-8 mt-5">
-    <button [disabled]="disableAddButton" (click)="onAddNewDevice()" class="btn btn-primary btn-lg">
+    <button [disabled]="gateway.peripheralDevices.length >=10" (click)="onAddNewDevice()" class="btn btn-primary btn-lg">
       Add Peripheral Device
     </button>
   </div>
@@ -46,7 +46,7 @@ role="dialog"
             <label for="pd-status" class="col-form-label">Status:</label>
             <input class="form-check-input m-3" type="checkbox" id="pd-status" ngModel name="status">
           </div>
-          <button type="submit" class="btn btn-success m-2">
+          <button [disabled]="!f.valid" type="submit" class="btn btn-success m-2">
             Save
           </button>
           <button type="button" class="btn btn-danger m-2"

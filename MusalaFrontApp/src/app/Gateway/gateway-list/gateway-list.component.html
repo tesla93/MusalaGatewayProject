@@ -41,9 +41,10 @@ role="dialog"
             <label for="gw-ipAddress" class="col-form-label">IPv4 address:</label>
             <input type="text" minlength="7" maxlength="15" size="15"
             pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$"
-            class="form-control" id="pd-datecreated" value="192.168.1.0" ngModel name="ipAddress" required>
+            class="form-control" id="pd-datecreated"  [ngModel]="'192.168.1.1'" name="ipAddress" required #ipAddres="ngModel">
+            <span class="help-block" *ngIf="!ipAddres.valid && ipAddres.touched">Please enter a valid Ipv4 Address</span>
           </div>
-          <button type="submit" class="btn btn-success m-2">
+          <button [disabled]="!f.valid" type="submit" class="btn btn-success m-2">
             Save
           </button>
           <button type="button" class="btn btn-danger m-2"

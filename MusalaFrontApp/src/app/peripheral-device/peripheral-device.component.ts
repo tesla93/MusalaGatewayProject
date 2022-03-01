@@ -23,7 +23,6 @@ pdToSave: PeripheralDevice
 constructor(private pdService: PeripheralDeviceService, private datePipe: DatePipe){}
 
   ngOnInit(): void {
-    this.disableAddButton=this.gateway.peripheralDevices.length >=9;
 
   }
 
