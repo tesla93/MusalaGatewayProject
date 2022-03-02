@@ -8,7 +8,7 @@
 
 3. In https://localhost:5001/swagger/index.html the api is documented.
 
-4. Then to get the client working `cd MusalaFrontApp` and type `npm build` to restore the necessary packages. 
+4. Then to get the client working `cd MusalaFrontApp` and type `npm install` to restore the necessary packages. 
 
 5. Once finished, write `ng serve` to launch the client application that will be available at address https://localhost:4200
 
