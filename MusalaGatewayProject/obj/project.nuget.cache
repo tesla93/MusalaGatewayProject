@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTvzq7E3JYGNv1088F0/AxJRspEHszbvhVAEWfgLKiPNTUVJeNX8ZGSWFz71aF1YZInZEB9kMGBu5t39xmnXWw==",
+  "dgSpecHash": "6wcS/92o+alp5RVNDySf2WFJGD84t24dKp3YGLrdAbJd22Dhm5Y0ev25fa0cCXoQNT5A4zlyUKHmM3pQOBA64w==",
   "success": true,
-  "projectFilePath": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.csproj",
+  "projectFilePath": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leoct\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\leoct\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

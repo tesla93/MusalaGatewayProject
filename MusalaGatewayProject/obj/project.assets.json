@@ -6930,9 +6930,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.csproj",
-      "projectName": "MusalaGatewayProject",
-      "projectPath": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.csproj",
+      "projectUniqueName": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.API.csproj",
+      "projectName": "MusalaGatewayProject.API",
+      "projectPath": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\MusalaGatewayProject.API.csproj",
       "packagesPath": "C:\\Users\\leoct\\.nuget\\packages\\",
       "outputPath": "D:\\German\\musala\\code\\MusalaGatewayProject\\MusalaGatewayProject\\obj\\",
       "projectStyle": "PackageReference",

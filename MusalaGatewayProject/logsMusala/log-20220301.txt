@@ -1,0 +1,293 @@
+ 2022-03-01 18:46:58 [] Application MusalaGateway is started
+ 2022-03-01 18:47:11 [] Application started. Press Ctrl+C to shut down.
+ 2022-03-01 18:47:12 [] Hosting environment: Development
+ 2022-03-01 18:47:12 [] Content root path: D:\German\musala\code\MusalaGatewayProject\MusalaGatewayProject
+ 2022-03-01 18:47:12 [] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+ 2022-03-01 18:47:12 [] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 286.3252ms
+ 2022-03-01 18:47:13 [] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+ 2022-03-01 18:47:13 [] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 187.8510ms
+ 2022-03-01 18:50:22 [] Application MusalaGateway is started
+ 2022-03-01 18:50:25 [] Application started. Press Ctrl+C to shut down.
+ 2022-03-01 18:50:25 [] Hosting environment: Development
+ 2022-03-01 18:50:25 [] Content root path: D:\German\musala\code\MusalaGatewayProject\MusalaGatewayProject
+ 2022-03-01 18:50:25 [] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+ 2022-03-01 18:50:26 [] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 512.9535ms
+ 2022-03-01 18:50:26 [] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+ 2022-03-01 18:50:26 [] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 305.8192ms
+ 2022-03-01 19:01:51 [] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+ 2022-03-01 19:01:51 [] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 15.7230ms
+ 2022-03-01 19:01:51 [] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+ 2022-03-01 19:01:51 [] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+ 2022-03-01 19:01:51 [] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+ 2022-03-01 19:01:52 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 142933 text/css 227.5823ms
+ 2022-03-01 19:01:52 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 196.3071ms
+ 2022-03-01 19:01:52 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 267.0622ms
+ 2022-03-01 19:01:52 [] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+ 2022-03-01 19:01:52 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 10.9472ms
+ 2022-03-01 19:01:52 [] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+ 2022-03-01 19:01:52 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 31.6005ms
+ 2022-03-01 19:01:52 [] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+ 2022-03-01 19:01:52 [] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 200 665 image/png 1.0902ms
+ 2022-03-01 19:01:52 [] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+ 2022-03-01 19:01:52 [] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.8985ms
+ 2022-03-01 20:29:56 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway - -
+ 2022-03-01 20:29:56 [] CORS policy execution successful.
+ 2022-03-01 20:29:56 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:29:56 [] Route matched with {action = "GetGateways", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateways() on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:29:57 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:29:58 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:00 [] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+FROM [Gateways] AS [g]
+ 2022-03-01 20:30:00 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3202.3568ms.
+ 2022-03-01 20:30:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MusalaGatewayProject.Models.GatewayDTO, MusalaGatewayProject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-03-01 20:30:01 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) in 4838.8215ms
+ 2022-03-01 20:30:01 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:01 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway - - - 200 367 application/json;+charset=utf-8 5029.1617ms
+ 2022-03-01 20:30:12 [] Request starting HTTP/2 OPTIONS https://localhost:5001/api/gateway/ - -
+ 2022-03-01 20:30:12 [] CORS policy execution successful.
+ 2022-03-01 20:30:12 [] Request finished HTTP/2 OPTIONS https://localhost:5001/api/gateway/ - - - 204 - - 2.5194ms
+ 2022-03-01 20:30:12 [] Request starting HTTP/2 POST https://localhost:5001/api/gateway/ application/json 39
+ 2022-03-01 20:30:12 [] CORS policy execution successful.
+ 2022-03-01 20:30:12 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:12 [] Route matched with {action = "CreateGateway", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateGateway(MusalaGatewayProject.Models.GatewayDTO) on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:12 [] Executed action MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API) in 122.7497ms
+ 2022-03-01 20:30:12 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:12 [] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+ 2022-03-01 20:30:12 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway - -
+ 2022-03-01 20:30:12 [] CORS policy execution successful.
+ 2022-03-01 20:30:12 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:12 [] Route matched with {action = "GetGateways", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateways() on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:12 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:12 [] Something went wrong in the Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+ 2022-03-01 20:30:12 [] Request finished HTTP/2 POST https://localhost:5001/api/gateway/ application/json 39 - 500 - application/json 413.1412ms
+ 2022-03-01 20:30:12 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:12 [] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+FROM [Gateways] AS [g]
+ 2022-03-01 20:30:12 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 58.76ms.
+ 2022-03-01 20:30:12 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MusalaGatewayProject.Models.GatewayDTO, MusalaGatewayProject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-03-01 20:30:12 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) in 97.8366ms
+ 2022-03-01 20:30:12 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:12 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway - - - 200 367 application/json;+charset=utf-8 160.7067ms
+ 2022-03-01 20:30:18 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway - -
+ 2022-03-01 20:30:18 [] CORS policy execution successful.
+ 2022-03-01 20:30:18 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:18 [] Route matched with {action = "GetGateways", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateways() on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:18 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:18 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:18 [] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+FROM [Gateways] AS [g]
+ 2022-03-01 20:30:18 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.5357ms.
+ 2022-03-01 20:30:18 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MusalaGatewayProject.Models.GatewayDTO, MusalaGatewayProject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-03-01 20:30:18 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) in 54.0181ms
+ 2022-03-01 20:30:18 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:18 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway - - - 200 367 application/json;+charset=utf-8 55.1649ms
+ 2022-03-01 20:30:31 [] Request starting HTTP/2 OPTIONS https://localhost:5001/api/gateway/ - -
+ 2022-03-01 20:30:31 [] CORS policy execution successful.
+ 2022-03-01 20:30:31 [] Request finished HTTP/2 OPTIONS https://localhost:5001/api/gateway/ - - - 204 - - 0.3609ms
+ 2022-03-01 20:30:31 [] Request starting HTTP/2 POST https://localhost:5001/api/gateway/ application/json 42
+ 2022-03-01 20:30:31 [] CORS policy execution successful.
+ 2022-03-01 20:30:31 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:31 [] Route matched with {action = "CreateGateway", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateGateway(MusalaGatewayProject.Models.GatewayDTO) on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:31 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:31 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:31 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway - -
+ 2022-03-01 20:30:31 [] CORS policy execution successful.
+ 2022-03-01 20:30:31 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:31 [] Route matched with {action = "GetGateways", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateways() on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:31 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:31 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:31 [] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+FROM [Gateways] AS [g]
+ 2022-03-01 20:30:31 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.7045ms.
+ 2022-03-01 20:30:31 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MusalaGatewayProject.Models.GatewayDTO, MusalaGatewayProject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-03-01 20:30:31 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) in 41.6595ms
+ 2022-03-01 20:30:31 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:31 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway - - - 200 367 application/json;+charset=utf-8 42.4462ms
+ 2022-03-01 20:30:32 [] Executed DbCommand (60ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Gateways] ([SerialNumber], [IpAddress], [Name])
+VALUES (@p0, @p1, @p2);
+ 2022-03-01 20:30:32 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 378.4583ms.
+ 2022-03-01 20:30:32 [] Executing CreatedAtRouteResult, writing value of type 'MusalaGatewayProject.Data.Gateway'.
+ 2022-03-01 20:30:32 [] Executed action MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API) in 587.0798ms
+ 2022-03-01 20:30:32 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.CreateGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:32 [] Request finished HTTP/2 POST https://localhost:5001/api/gateway/ application/json 42 - 201 119 application/json;+charset=utf-8 587.7866ms
+ 2022-03-01 20:30:36 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway - -
+ 2022-03-01 20:30:36 [] CORS policy execution successful.
+ 2022-03-01 20:30:36 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:36 [] Route matched with {action = "GetGateways", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateways() on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:36 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:36 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:36 [] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+FROM [Gateways] AS [g]
+ 2022-03-01 20:30:36 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.3305ms.
+ 2022-03-01 20:30:36 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MusalaGatewayProject.Models.GatewayDTO, MusalaGatewayProject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-03-01 20:30:36 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API) in 55.8279ms
+ 2022-03-01 20:30:36 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateways (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:36 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway - - - 200 487 application/json;+charset=utf-8 57.0353ms
+ 2022-03-01 20:30:42 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway/b084f159-d18c-4c1a-f665-08d9fbec3deb - -
+ 2022-03-01 20:30:42 [] CORS policy execution successful.
+ 2022-03-01 20:30:42 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:42 [] Route matched with {action = "GetGateway", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateway(System.Guid) on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:42 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:42 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:42 [] Executed DbCommand (4ms) [Parameters=[@__serialNumber_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[SerialNumber], [t].[IpAddress], [t].[Name], [p].[Id], [p].[DateCreated], [p].[GatewayId], [p].[Status], [p].[Vendor]
+FROM (
+    SELECT TOP(1) [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+    FROM [Gateways] AS [g]
+    WHERE [g].[SerialNumber] = @__serialNumber_0
+) AS [t]
+LEFT JOIN [PeripheralDevices] AS [p] ON [t].[SerialNumber] = [p].[GatewayId]
+ORDER BY [t].[SerialNumber], [p].[Id]
+ 2022-03-01 20:30:42 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 240.5343ms.
+ 2022-03-01 20:30:42 [] Executing OkObjectResult, writing value of type 'MusalaGatewayProject.Models.GatewayDTO'.
+ 2022-03-01 20:30:42 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API) in 276.944ms
+ 2022-03-01 20:30:42 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:42 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway/b084f159-d18c-4c1a-f665-08d9fbec3deb - - - 200 119 application/json;+charset=utf-8 290.7982ms
+ 2022-03-01 20:30:50 [] Request starting HTTP/2 OPTIONS https://localhost:5001/api/peripheraldevice/ - -
+ 2022-03-01 20:30:50 [] CORS policy execution successful.
+ 2022-03-01 20:30:50 [] Request finished HTTP/2 OPTIONS https://localhost:5001/api/peripheraldevice/ - - - 204 - - 0.5926ms
+ 2022-03-01 20:30:50 [] Request starting HTTP/2 POST https://localhost:5001/api/peripheraldevice/ application/json 109
+ 2022-03-01 20:30:50 [] CORS policy execution successful.
+ 2022-03-01 20:30:50 [] Executing endpoint 'MusalaGatewayProject.Controllers.PeripheralDeviceController.CreatePeripheralDevice (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:50 [] Route matched with {action = "CreatePeripheralDevice", controller = "PeripheralDevice"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreatePeripheralDevice(MusalaGatewayProject.Models.PeripheralDeviceDTO) on controller MusalaGatewayProject.Controllers.PeripheralDeviceController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:50 [] Executing action method MusalaGatewayProject.Controllers.PeripheralDeviceController.CreatePeripheralDevice (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:50 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:50 [] Executed DbCommand (4ms) [Parameters=[@__serialNumberGateway_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[DateCreated], [p].[GatewayId], [p].[Status], [p].[Vendor]
+FROM [PeripheralDevices] AS [p]
+WHERE [p].[GatewayId] = @__serialNumberGateway_0
+ 2022-03-01 20:30:50 [] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Guid), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [PeripheralDevices] ([DateCreated], [GatewayId], [Status], [Vendor])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [PeripheralDevices]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+ 2022-03-01 20:30:50 [] Executed action method MusalaGatewayProject.Controllers.PeripheralDeviceController.CreatePeripheralDevice (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 110.1152ms.
+ 2022-03-01 20:30:50 [] Executing CreatedAtRouteResult, writing value of type 'MusalaGatewayProject.Data.PeripheralDevice'.
+ 2022-03-01 20:30:50 [] Executed action MusalaGatewayProject.Controllers.PeripheralDeviceController.CreatePeripheralDevice (MusalaGatewayProject.API) in 175.8375ms
+ 2022-03-01 20:30:50 [] Executed endpoint 'MusalaGatewayProject.Controllers.PeripheralDeviceController.CreatePeripheralDevice (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:50 [] Request finished HTTP/2 POST https://localhost:5001/api/peripheraldevice/ application/json 109 - 201 151 application/json;+charset=utf-8 186.3824ms
+ 2022-03-01 20:30:51 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway/b084f159-d18c-4c1a-f665-08d9fbec3deb - -
+ 2022-03-01 20:30:51 [] CORS policy execution successful.
+ 2022-03-01 20:30:51 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:51 [] Route matched with {action = "GetGateway", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateway(System.Guid) on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:51 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:51 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:51 [] Executed DbCommand (5ms) [Parameters=[@__serialNumber_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[SerialNumber], [t].[IpAddress], [t].[Name], [p].[Id], [p].[DateCreated], [p].[GatewayId], [p].[Status], [p].[Vendor]
+FROM (
+    SELECT TOP(1) [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+    FROM [Gateways] AS [g]
+    WHERE [g].[SerialNumber] = @__serialNumber_0
+) AS [t]
+LEFT JOIN [PeripheralDevices] AS [p] ON [t].[SerialNumber] = [p].[GatewayId]
+ORDER BY [t].[SerialNumber], [p].[Id]
+ 2022-03-01 20:30:51 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.7589ms.
+ 2022-03-01 20:30:51 [] Executing OkObjectResult, writing value of type 'MusalaGatewayProject.Models.GatewayDTO'.
+ 2022-03-01 20:30:51 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API) in 65.4502ms
+ 2022-03-01 20:30:51 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:51 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway/b084f159-d18c-4c1a-f665-08d9fbec3deb - - - 200 245 application/json;+charset=utf-8 66.2201ms
+ 2022-03-01 20:30:56 [] Request starting HTTP/2 OPTIONS https://localhost:5001/api/peripheraldevice/60 - -
+ 2022-03-01 20:30:56 [] CORS policy execution successful.
+ 2022-03-01 20:30:56 [] Request finished HTTP/2 OPTIONS https://localhost:5001/api/peripheraldevice/60 - - - 204 - - 0.3390ms
+ 2022-03-01 20:30:56 [] Request starting HTTP/2 DELETE https://localhost:5001/api/peripheraldevice/60 - -
+ 2022-03-01 20:30:56 [] CORS policy execution successful.
+ 2022-03-01 20:30:56 [] Executing endpoint 'MusalaGatewayProject.Controllers.PeripheralDeviceController.DeletePeripheralDevice (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:56 [] Route matched with {action = "DeletePeripheralDevice", controller = "PeripheralDevice"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeletePeripheralDevice(Int32) on controller MusalaGatewayProject.Controllers.PeripheralDeviceController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:56 [] Executing action method MusalaGatewayProject.Controllers.PeripheralDeviceController.DeletePeripheralDevice (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:56 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:56 [] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[DateCreated], [p].[GatewayId], [p].[Status], [p].[Vendor]
+FROM [PeripheralDevices] AS [p]
+WHERE [p].[Id] = @__id_0
+ 2022-03-01 20:30:56 [] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [PeripheralDevices]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+ 2022-03-01 20:30:56 [] Executed action method MusalaGatewayProject.Controllers.PeripheralDeviceController.DeletePeripheralDevice (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 161.771ms.
+ 2022-03-01 20:30:56 [] Executing HttpStatusCodeResult, setting HTTP status code 204
+ 2022-03-01 20:30:56 [] Executed action MusalaGatewayProject.Controllers.PeripheralDeviceController.DeletePeripheralDevice (MusalaGatewayProject.API) in 205.7981ms
+ 2022-03-01 20:30:56 [] Executed endpoint 'MusalaGatewayProject.Controllers.PeripheralDeviceController.DeletePeripheralDevice (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:56 [] Request finished HTTP/2 DELETE https://localhost:5001/api/peripheraldevice/60 - - - 0 - - 214.2937ms
+ 2022-03-01 20:30:56 [] Request starting HTTP/2 GET https://localhost:5001/api/gateway/b084f159-d18c-4c1a-f665-08d9fbec3deb - -
+ 2022-03-01 20:30:56 [] CORS policy execution successful.
+ 2022-03-01 20:30:56 [] Executing endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:56 [] Route matched with {action = "GetGateway", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGateway(System.Guid) on controller MusalaGatewayProject.Controllers.GatewayController (MusalaGatewayProject.API).
+ 2022-03-01 20:30:56 [] Executing action method MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API) - Validation state: "Valid"
+ 2022-03-01 20:30:56 [] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2022-03-01 20:30:56 [] Executed DbCommand (4ms) [Parameters=[@__serialNumber_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[SerialNumber], [t].[IpAddress], [t].[Name], [p].[Id], [p].[DateCreated], [p].[GatewayId], [p].[Status], [p].[Vendor]
+FROM (
+    SELECT TOP(1) [g].[SerialNumber], [g].[IpAddress], [g].[Name]
+    FROM [Gateways] AS [g]
+    WHERE [g].[SerialNumber] = @__serialNumber_0
+) AS [t]
+LEFT JOIN [PeripheralDevices] AS [p] ON [t].[SerialNumber] = [p].[GatewayId]
+ORDER BY [t].[SerialNumber], [p].[Id]
+ 2022-03-01 20:30:56 [] Executed action method MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.7025ms.
+ 2022-03-01 20:30:56 [] Executing OkObjectResult, writing value of type 'MusalaGatewayProject.Models.GatewayDTO'.
+ 2022-03-01 20:30:56 [] Executed action MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API) in 39.231ms
+ 2022-03-01 20:30:56 [] Executed endpoint 'MusalaGatewayProject.Controllers.GatewayController.GetGateway (MusalaGatewayProject.API)'
+ 2022-03-01 20:30:56 [] Request finished HTTP/2 GET https://localhost:5001/api/gateway/b084f159-d18c-4c1a-f665-08d9fbec3deb - - - 200 119 application/json;+charset=utf-8 40.0936ms

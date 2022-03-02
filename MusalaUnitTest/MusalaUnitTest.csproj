@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MusalaGatewayProject\MusalaGatewayProject.csproj" />
+    <ProjectReference Include="..\MusalaGatewayProject\MusalaGatewayProject.API.csproj" />
   </ItemGroup>
 
 </Project>
